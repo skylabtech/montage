@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montage Media K.E</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1 class="slide-in">MONTAGE MEDIA K.E</h1>
+        <p class="slide-in">  Elevate Your Brand with Tailored Web Solutions</p>
+        <a href="{% url 'landing' %}" class="btn slide-in">Explore</a>
+    </div>
+</header>
+
+<!-- Other sections/content goes here -->
+
+</body>
+</html>
+
+<style>
+   body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: url('static/img/google.jpg'); /* Adjust the path as per your folder structure */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.slide-in {
+    animation: slideIn 1s ease forwards, bounce 0.5s ease forwards;
+
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.hero-content h1{
+    opacity: 3;
+    color: #FFFFFF;
+    background-color: rgba(128, 128, 128, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -80px;
+}
+
+.hero-content p{
+    opacity: 3;
+    color: #FFFFFF;
+    background-color: rgba(128, 128, 128, 0.4);
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+
+
+
+
+
+
+.hero-content h1:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.hero-content p:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.hero-content .btn:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.hero-content h1, .hero-content p, .hero-content .btn {
+    animation-fill-mode: forwards;
+}
+
+/* BUTTON ANIMATION */
+
+.btn {
+    display: inline-block;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+.btn:hover {
+    transform: scale(1.5); /* Scale the button on hover by 50% */
+}
+
+
+
+</style>

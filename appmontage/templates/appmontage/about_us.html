@@ -1,0 +1,106 @@
+{% extends 'appmontage/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/65f282a69131ed19d979ae1d/1hotksnam';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<div class="container">
+    <section class="section our-mission-section">
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>Empowering businesses through innovative solutions</p>
+            <p>At our core, we strive to empower businesses by providing them with innovative solutions tailored to their needs. We believe in fostering growth, efficiency, and success for our clients.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'img/mission3.png' %}" alt="Our Mission Image" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="section our-values-section">
+        <div class="content">
+            <h2>Our Values</h2>
+            <p>Guiding principles that drive our actions</p>
+            <p>Integrity, innovation, collaboration, and excellence are the cornerstones of our values. We are committed to upholding these principles in every aspect of our work.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'img/values2.png' %}" alt="Our Values Image" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="section we-offer-section">
+        <div class="content">
+            <h2>What We Offer</h2>
+            <p>We Bring Your Business out of the Proverbial Stone Age</p>
+            <div class="our-offer-items">
+                <div class="item">
+                    <h4>Custom Software Development</h4>
+                    <p>We develop custom software solutions tailored to your specific business needs, helping you streamline processes and improve efficiency.</p>
+                </div>
+                <div class="item">
+                    <h4>Web Design and Development</h4>
+                    <p>Our team of experienced designers and developers create stunning websites that captivate your audience and drive results.</p>
+                </div>
+                <div class="item">
+                    <h4>Mobile App Development</h4>
+                    <p>From iOS to Android, we build mobile apps that enhance user engagement and provide seamless experiences on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+<style>
+/* CSS for the sections */
+.section {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .content {
+    width: 50%;
+}
+
+.section .image {
+    width: 40%;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #666;
+
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+
+
+
+{% endblock %}
